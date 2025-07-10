@@ -11,7 +11,7 @@ const menu = document.getElementById("menu");
 function toggleMenu() {
   menu.style.display = menu.style.display === "block" ? "none" : "block";
 }
-
+// Catergory
 function createCategoryMenu(categories) {
   menu.innerHTML = `
     <div class="menu-close" onclick="toggleMenu()">

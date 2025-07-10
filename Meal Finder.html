@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+</head>
+<body>
+    <link rel="stylesheet" href="Meal Finder.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <span class=logo><i class="fa-solid fa-utensils"></i> MEAL FINDER</span>
+      <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    </div></header>
+    <div class="hero">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search recipes here ..." />
+      <button onclick="searchMeal()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <h1>What are your favorite cuisines?</h1>
+    <p>Personalize your experience</p>
+    <div class="menu" id="menu"></div>
+    </div>
+  
+
+  <main>
+    <section id="meal-section" class="meals-section"></section>
+
+    <section class="categories-section">
+      <h2>CATEGORIES</h2>
+      <div id="categories" class="categories"></div>
+    </section>
+
+    <section id="meal-details" class="meal-details">
+  <span class="close-btn" onclick="toggleMenu()">×</span>
+</div>
+    </section>
+  </main>
+
+ <script src="Meal Finder.js"></script>
+</body>
+</html>

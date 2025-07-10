@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  color: white;
+  position: sticky;
+  top:0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e65100;
+  padding:10px 10px;
+  font-size:20px;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+}
+
+.menu-toggle {
+ background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.hero{
+    background: url('./images/pexels-enginakyurt-1435895.jpg') center/cover no-repeat;
+    text-align: center;
+    align-content: center;
+    height:300px;
+}
+
+.search-box {
+  margin: 1rem 0;
+}
+
+.search-box input {
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  height:40px;
+}
+
+.search-box button {
+  padding: 0.5rem;
+  border: none;
+  background: #e65100;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  height:40px;
+  width:40px;
+}
+main{
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    text-align: left;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-evenly;
+  gap:40px;
+  margin-top: 1rem;
+}
+
+.category-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.category-card:hover {
+  transform: scale(1.04);
+}
+
+.category-card img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+  z-index: 6;
+}
+.category-card p {
+  background: #e65100;
+  color: white;
+  font-weight: bold;
+  position:absolute;
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 5;
+}
+
+.meals-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.meal-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+
+.meal-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+meal-card p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.meal-details {
+  padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.meal-details img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.menu {
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  background: white;
+  box-shadow: 0 0 10px #00000033;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: none;
+  width: 280px;
+}
+.menu a {
+  display: block;
+  padding: 5px;
+  margin:5px;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-bottom: 2px solid grey;
+}
+.menu-close {
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #e65100;
+  cursor: pointer;
+}
+.tags, .ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tag {
+  background-color: #f7f7f7;
+  border-left: 4px solid #e65100;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.instructions {
+  margin-top: 20px;
+}
+
+.instructions p::before {
+  content: "✔ ";
+  color: #e65100;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .search-box input {
+    width:80%;
+}
+}
+
+
+
